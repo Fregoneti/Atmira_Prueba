@@ -11,7 +11,8 @@ import { DataService } from '../services/data.service';
 export class Pagina2Component implements OnInit {
   fecha: string;
   pre: any;
-  bloque:bloque;
+  imagen:any;
+  explicacion:any;
 
   constructor(private _route: ActivatedRoute, private data: DataService) {
 
@@ -19,9 +20,10 @@ export class Pagina2Component implements OnInit {
     console.log(this.fecha);
     this.data.getInfo(this.fecha).subscribe(resp => {
       this.pre = resp;
-      this.bloque.fecha=this.pre.date;
-      this.bloque.imagen=this.pre.url;
-      this.bloque.titulo=this.pre.title;
+      this.imagen=this.pre.url;
+      this.explicacion=this.pre.explanation;
+     console.log(this.imagen);
+     console.log(this.explicacion);
     })
   }
 

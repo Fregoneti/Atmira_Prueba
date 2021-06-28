@@ -1,0 +1,10 @@
+.padre{
+    position:relative;
+    width:100%;
+}   
+
+.imagen{
+    margin:auto;
+    width: 50%;
+    display:block;
+}

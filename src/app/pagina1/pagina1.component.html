@@ -1,52 +1,74 @@
-<h1>Prueba Atmira Front</h1>
-
+<h1 style="text-align: center; margin-top: 5px;margin-bottom: 10px;">Prueba Atmira Front</h1>
+<div style="margin-right: 40px;">
 <table class="table table-hover table-dark">
   <thead>
     <tr>
       <th>
-        <button [routerLink]="['/info',this.fecha1]">
-          2020-09-10
+        <div class="padre">
+          <h3>{{tit1}}</h3>
+          <h4>2020-09-10</h4>
+          <img class="imagen" [src]="this.im1" style="text-align: center;">
+        </div>
+        <button style="margin-top: 20px;" [routerLink]="['/info',this.fecha1]">
+          Inspeccionar
         </button>
       </th>
       <th>
         -
       </th>
       <th>
-        <button [routerLink]="['/info',this.fecha2]">
-          2020-09-11
+        <h3>{{tit2}}</h3>
+        <h4>2020-09-11</h4>
+        <img class="imagen" [src]="this.im2" style="text-align: center;">
+        <button style="margin-top: 20px;" [routerLink]="['/info',this.fecha2]">
+          Inspeccionar
         </button>
       </th>
       <th>
         -
       </th>
       <th>
-        <button [routerLink]="['/info',this.fecha3]">
-          2020-09-12
+        <h3>{{tit3}}</h3>
+        <h4>2020-09-12</h4>
+        <img class="imagen" [src]="this.im3" style="text-align: center;">
+        <button style="margin-top: 20px;" [routerLink]="['/info',this.fecha3]">
+          Inspeccionar
         </button>
       </th>
     </tr>
     <tr>
       <th>
-        <button [routerLink]="['/info',this.fecha4]">
-          2020-09-13
+        <h3>{{tit4}}</h3>
+        <h4>2020-09-13</h4>
+        <img class="imagen" [src]="this.im4" style="text-align: center;">
+        <button style="margin-top: 20px;" [routerLink]="['/info',this.fecha4]">
+          Inspeccionar
         </button>
       </th>
       <th>
         -
       </th>
       <th>
-        <button [routerLink]="['/info',this.fecha5]">
-          2020-09-14
+        <h3>{{tit5}}</h3>
+        <h4>2020-09-14</h4>
+        <img class="imagen" [src]="this.im5" style="text-align: center;">
+
+        <button style="margin-top: 20px;" [routerLink]="['/info',this.fecha5]">
+          Inspeccionar
         </button>
       </th>
       <th>
         -
       </th>
       <th>
+        <h3>{{tit6}}</h3>
+        <h4>2020-09-15</h4>
+        <img class="imagen" [src]="this.im6" style="text-align: center;">
         <button [routerLink]="['/info',this.fecha6]">
-          2020-09-15
+          Inspeccionar
         </button>
       </th>
     </tr>
   </thead>
 </table>
+</div>

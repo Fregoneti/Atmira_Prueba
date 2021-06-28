@@ -9,7 +9,8 @@ export class DataService {
   private url:string;
 
   constructor(private http:HttpClient) {
-    this.url="https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=";
+    //this.url="https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=";
+    this.url="https://api.nasa.gov/planetary/apod?api_key=zdUP8ElJv1cehFM0rsZVSQN7uBVxlDnu4diHlLSb&date=";
    }
    
 
